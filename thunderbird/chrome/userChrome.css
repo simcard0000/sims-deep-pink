@@ -1,0 +1,55 @@
+/* THUNDERBIRD CUSTOM PROFILE - NOT DONE YET */
+
+/* Hiding the Chat and Tasks buttons from the Spaces Toolbar */
+
+#chatButton,
+#tasksButton {
+    display: none !important;
+}
+
+/* Recoloring elements of the ThunderBird UI */
+
+/* New message button */
+#folderPaneWriteMessage {
+    background-color: #ff0083 !important;
+}
+
+#folderPaneWriteMessage:hover {
+    background-color: #7c1f4d !important;
+}
+
+/* Message pane */
+tr[is="thread-row"]:hover,
+[is="tree-view-table-body"]>:hover,
+[is="tree-view-table-body"]>.selected:hover {
+    background-color: #7c1f4d !important;
+}
+
+[is="tree-view-table-body"]>.selected {
+    background-color: #ff0083 !important;
+}
+
+/* Folder pane */
+.container:hover,
+li.selected>.container:hover {
+    background-color: #7c1f4d !important;
+}
+
+li.selected>.container {
+    background-color: #ff0083 !important;
+}
+
+#folderTree:focus-within li.selected>.container,
+#folderTree li.drop-target>.container {
+    background-color: #ff0083 !important;
+}
+
+/* Bold sender in cards view */
+.thread-card-container :is(.sender) {
+    font-weight: bold !important;
+}
+
+/* Change text to white in cards view */
+.thread-card-container {
+    color: #ffffff !important;
+}
